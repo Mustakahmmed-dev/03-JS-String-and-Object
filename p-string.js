@@ -41,5 +41,5 @@ for(let i = 0; i < reverseSentence.length; i++ ){
 // console.log(rev);
 
 // Reverse 3: using reverse
-let reversed = reverseSentence.split('').reverse();
+let reversed = reverseSentence.split('').reverse().join("");
 console.log(reversed);
