@@ -24,14 +24,22 @@ let reverseSentence = "Hey bro, I'm learning Web Development";
 
 // Reverse 1: using for of loop
 let reverse = '';
-for(let letter of reverseSentence){
+for(const letter of reverseSentence){
     // console.log(letter);
     reverse = letter + reverse;
 }
 // console.log(reverse);
 
 // Reverse 2: using for loop and index
+let rev = '';
 for(let i = 0; i < reverseSentence.length; i++ ){
     // console.log(i);
-    console.log(i, " : ", reverseSentence[i]);
+    // console.log(i, " : ", reverseSentence[i]);
+    let letter = reverseSentence[i];
+    rev = letter + rev;
 }
+// console.log(rev);
+
+// Reverse 3: using reverse
+let reversed = reverseSentence.split('').reverse();
+console.log(reversed);
