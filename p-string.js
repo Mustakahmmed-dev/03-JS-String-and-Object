@@ -22,10 +22,16 @@ let trimText = text.trim();
 // // reverse
 let reverseSentence = "Hey bro, I'm learning Web Development";
 
-// Reverse 1
+// Reverse 1: using for of loop
 let reverse = '';
 for(let letter of reverseSentence){
     // console.log(letter);
     reverse = letter + reverse;
 }
-console.log(reverse);
+// console.log(reverse);
+
+// Reverse 2: using for loop and index
+for(let i = 0; i < reverseSentence.length; i++ ){
+    // console.log(i);
+    console.log(i, " : ", reverseSentence[i]);
+}
