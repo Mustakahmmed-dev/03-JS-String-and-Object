@@ -11,11 +11,25 @@ for(let i = 0; i< array.length; i++){
 let y = 0;
 while(y < array.length){
     if(y > 3){
-        console.log("Break now");
+        // console.log("Break now");
         break;
 
     }
-    console.log(y, " : ", array[y]);
+    // console.log(y, " : ", array[y]);
     
     y++;
+}
+
+let friends = ["Jack", "Mack", "Back", "Sack", "Tac", "Hack", "Lack", "Wow"];
+
+// use for of
+for(const friend of friends){
+    console.log("my friend: ", friend);
+  
+}
+// use for loop
+for(let friend = 0; friend < friends.length; friend++){
+    // console.log("Friend index: ", friend);
+    console.log("Friend: ", friends[friend]);
+   
 }
